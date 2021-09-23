@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +23,6 @@ main {
   font-size: 75px;
   text-transform: uppercase;
   letter-spacing: 15px;
-  font-weight: 400;
   margin-bottom: 2rem;
 }
 .content > h1 > span {
@@ -42,10 +42,15 @@ main {
 }
 .email > input {
   margin-top: 2rem;
-  border: 1px solid hsl(0, 36%, 70%);
   width: 350px;
   height: 2.5rem;
   border-radius: 25px;
+}
+.input_valid {
+  border: 1px solid hsl(0, 36%, 70%);
+}
+.input_invalid {
+  border: 1px solid hsl(0, 93%, 68%);
 }
 .email > input::placeholder {
   padding-left: 2rem;
@@ -69,6 +74,13 @@ main {
 .content > p {
   letter-spacing: 1px;
   color: hsl(0, 36%, 70%);
+}
+.valid {
+  display: none;
+}
+.invalid {
+  color: hsl(0, 93%, 68%);
+  font-size: 15px;
 }
 @media screen and (max-width: 414px) {
   .image_desktop {
@@ -103,10 +115,15 @@ main {
     margin: 2rem 2rem;
   }
   .email > input {
-    border: 1px solid hsl(0, 36%, 70%);
     width: 100%;
     height: 2.5rem;
     border-radius: 25px;
+  }
+  .input_valid {
+    border: 1px solid hsl(0, 36%, 70%);
+  }
+  .input_invalid {
+    border: 1px solid hsl(0, 93%, 68%);
   }
   .email > button {
     position: absolute;
