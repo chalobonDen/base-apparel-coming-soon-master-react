@@ -10,7 +10,6 @@ function App() {
 
   const onHandleInput = (e) => {
     setEmail(e.target.value);
-    console.log(email);
   };
 
   const onClickInput = () => {
@@ -19,8 +18,7 @@ function App() {
     } else {
       setCheckEmail(true);
     }
-    console.log(email);
-    console.log(checkEmail);
+    setEmail('');
   };
 
   return (
@@ -42,6 +40,7 @@ function App() {
           </p>
           <div className="email">
             <input
+              value={email}
               className={checkEmail === false ? 'input_invalid' : 'input_valid'}
               type="text"
               placeholder="Email Address"
