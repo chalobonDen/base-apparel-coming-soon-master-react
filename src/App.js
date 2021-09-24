@@ -25,9 +25,9 @@ function App() {
     <div>
       <main>
         <div className="content">
-          <div className="logo">
+          <header className="logo">
             <img src={logo} alt="" />
-          </div>
+          </header>
           <img src={heroMobile} alt="" className="image_mobile" />
 
           <h1>
